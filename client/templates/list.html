@@ -1,0 +1,31 @@
+<div class="panel panel-default" ng-init="getDetails()">
+	<div class="panel-heading">
+	  <p class="panel-title">Persons List</p>
+	</div>
+	<div class="panel-body">
+			<table class="table table-striped">
+	<thead>
+	<tr>
+	  <th>Name</th>
+	  <th>Age</th>
+	  <th>Gender</th>
+	  <th>Contact</th>
+	  <th>Actions</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr ng-repeat="detail in details">
+	  <td>{{ detail.Name }}</td>
+	  <td>{{ detail.Age }}</td>
+	  <td>{{ detail.Gender }}</td>
+	  <td>{{ detail.Mobile_number }}</td>
+	  <td> 
+	    <a href="#/details/{{detail._id}}/show" class="btn btn-info"> Show  </a>
+	    <a href="#/details/{{detail._id}}/edit" class="btn btn-success"> Edit  </a>
+	  	<a ng-click="deleteDetail(detail._id)" class="btn btn-danger">Delete </a>
+	  </td>
+	</tr>
+	</tbody>
+</table>
+<div>
+<div>

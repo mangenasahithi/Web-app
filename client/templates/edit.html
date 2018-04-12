@@ -1,0 +1,27 @@
+<div class="panel panel-default" ng-init="showDetails()">
+	<div class="panel-heading">
+	  <p class="panel-title">update a person</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="updateDetails()">
+    <div class="form-group">
+      <label for="Name">Name:</label>
+      <input type="text" class="form-control" id="Name" ng-model="detail.Name" value="detail.Name">
+    </div>
+	<div class="form-group">
+      <label for="Age">Age:</label>
+      <input type="text" class="form-control" id="Age" ng-model="detail.Age" value="detail.Age">
+    </div>
+	<div class="form-group">
+      <label for="Gender">Gender:</label>
+      <input type="text" class="form-control" id="Gender" ng-model="detail.Gender" value="detail.Gender">
+    </div>
+	<div class="form-group">
+      <label for="Mobile_number">Mobile_number:</label>
+      <input type="text" class="form-control" id="Mobile_number" ng-model="detail.Mobile_number" value="detail.Mobile_number">
+    </div>
+    <button type="submit" class="btn btn-default">update</button>
+    <a href="#/details" class="btn btn-default"> Cancel</a>
+</form>		
+    </div>
+</div>

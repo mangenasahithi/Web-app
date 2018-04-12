@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <p class="panel-title">update person</p>
+  </div>
+  <div class="panel-body">
+    <form (submit)="updateDetail()">
+      <div class="form-group">
+        <label for="Name">Name:</label>
+        <input type="text" class="form-control" id="Name" [(ngModel)]="model.Name" name="Name">
+      </div>
+      <div class="form-group">
+        <label for="Age">Age:</label>
+        <input type="text" class="form-control" id="Age" [(ngModel)]="model.Age" name="Age">
+      </div>
+      <div class="form-group">
+        <label for="Gender">Gender:</label>
+        <input type="text" class="form-control" id="Gender" [(ngModel)]="model.Gender" name="Gender">
+      </div>
+      <div class="form-group">
+        <label for="Mobile_number">Mobile_number:</label>
+        <input type="text" class="form-control" id="Mobile_number" [(ngModel)]="model.Mobile_number" name="Mobile_number">
+      </div>
+      <button type="submit" class="btn btn-default">update</button>
+      <a class="btn btn-default"(click)="goBack()"> Cancel</a>
+    </form>
+  </div>
+</div>

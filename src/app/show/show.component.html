@@ -1,0 +1,17 @@
+<div class="panel panel-default" *ngIf="detail">
+  <div class="panel-heading">
+    <p class="panel-title">Persons Details information</p>
+  </div>
+  <div class="panel-body">
+    <form>
+      <div class="form-group">
+        <label class="form-control">Name: {{ detail.Name }}</label>
+        <label class="form-control">Age: {{ detail.Age }}</label>
+        <label class="form-control">Gender: {{ detail.Gender }}</label>
+        <label class="form-control">Mobile_number: {{ detail.Mobile_number }}</label>
+        <label class="form-control">ID: {{ detail._id }}</label>
+        <a class="btn btn-default"(click)="goBack()"> Cancel</a>
+      </div>
+    </form>
+    </div>
+      </div>
